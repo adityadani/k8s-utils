@@ -1,0 +1,12 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+   name: px-io-priority-pvc
+   annotations:
+     volume.beta.kubernetes.io/storage-class: px-io-priority-sc
+spec:
+   accessModes:
+     - ReadWriteMany
+   resources:
+     requests:
+       storage: 10Gi
