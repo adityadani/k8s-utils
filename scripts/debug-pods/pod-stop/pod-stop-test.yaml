@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: pod-stop
-        image: harshpx/pod-stop:latest
+        image: adityadani/pod-stop:latest
         volumeMounts:
         - name: nginx-persistent-storage
           mountPath: /var/sighandler
